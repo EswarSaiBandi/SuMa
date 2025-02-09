@@ -196,7 +196,8 @@
         <!-- Filters, Search, and Sorting -->
         <div class="row mb-4">
 	 
-            <div class="col-md-4">
+            <!-- <div class="col-md-4">  If you are uncommenting this..go to the script that is at almost botthm..dont select the first script ..go
+				to the second script and uncomment the commented one and comment the uncommented one
                 <select id="categoryFilter" class="form-select">
                     <option value="all">All Categories</option>
                     <option value="pain-relief">Pain Relief</option>
@@ -205,11 +206,13 @@
                     <option value="allergy">Allergy Medications</option>
 					<option value="vitamins">Vitamins</option>
                 </select>
-            </div>
-            <div class="col-md-4">
+            </div> -->
+            <div class="col-md-12">
                 <input type="text" id="searchInput" class="form-control" placeholder="Search products...">
             </div>
-            <div class="col-md-4">
+
+		 
+            <!-- <div class="col-md-4">
                 <select id="sortFilter" class="form-select">
                     <option value="default">Sort By</option>
                     <option value="price-asc">Price: Low to High</option>
@@ -217,8 +220,17 @@
                     <option value="name-asc">Name: A-Z</option>
                     <option value="name-desc">Name: Z-A</option>
                 </select>
-            </div>
+            </div> -->
         </div>
+
+
+	 
+		 
+		
+ 
+
+
+
 
         <!-- Products Grid -->
         <div class="row" id="productContainer">
@@ -371,7 +383,7 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const searchInput = document.querySelector("#products-section #searchInput");
-            const categoryFilter = document.querySelector("#products-section #categoryFilter");
+            const categoryFilter = document.querySelector("#products-section #categoryFilter"); 
             const sortFilter = document.querySelector("#products-section #sortFilter");
             const productContainer = document.querySelector("#products-section #productContainer");
 
@@ -535,63 +547,81 @@
  
 		<script>
 
-			document.addEventListener("DOMContentLoaded", function () {
-				const searchInput = document.querySelector("#products-section #searchInput");
-				const categoryFilter = document.querySelector("#products-section #categoryFilter");
-				const sortFilter = document.querySelector("#products-section #sortFilter");
-				const productContainer = document.querySelector("#products-section #productContainer");
+// document.addEventListener("DOMContentLoaded", function () {
+// 				const searchInput = document.querySelector("#products-section #searchInput");
+// 				const categoryFilter = document.querySelector("#products-section #categoryFilter");
+// 				const sortFilter = document.querySelector("#products-section #sortFilter");
+// 				const productContainer = document.querySelector("#products-section #productContainer");
 	
-				function filterProducts() {
-					const searchText = searchInput.value.toLowerCase();
-					const selectedCategory = categoryFilter.value;
-					const products = document.querySelectorAll("#products-section .product-card");
+// 				function filterProducts() {
+// 					const searchText = searchInput.value.toLowerCase();
+// 					const selectedCategory = categoryFilter.value;
+// 					const products = document.querySelectorAll("#products-section .product-card");
 	
-					products.forEach(product => {
-						const productName = product.getAttribute("data-name").toLowerCase();
-						const productCategory = product.getAttribute("data-category");
+// 					products.forEach(product => {
+// 						const productName = product.getAttribute("data-name").toLowerCase();
+// 						const productCategory = product.getAttribute("data-category");
 	
-						const matchesSearch = productName.includes(searchText);
-						const matchesCategory = selectedCategory === "all" || productCategory === selectedCategory;
+// 						const matchesSearch = productName.includes(searchText);
+// 						const matchesCategory = selectedCategory === "all" || productCategory === selectedCategory;
 	
-						product.style.display = matchesSearch && matchesCategory ? "block" : "none";
-					});
-				}
+// 						product.style.display = matchesSearch && matchesCategory ? "block" : "none";
+// 					});
+// 				}
 	
-				function sortProducts() {
-					const sortValue = sortFilter.value;
-					const products = Array.from(document.querySelectorAll("#products-section .product-card"));
+// 				function sortProducts() {
+// 					const sortValue = sortFilter.value;
+// 					const products = Array.from(document.querySelectorAll("#products-section .product-card"));
 	
-					products.sort((a, b) => {
-						const priceA = parseFloat(a.getAttribute("data-price"));
-						const priceB = parseFloat(b.getAttribute("data-price"));
-						const nameA = a.getAttribute("data-name").toLowerCase();
-						const nameB = b.getAttribute("data-name").toLowerCase();
+// 					products.sort((a, b) => {
+// 						const priceA = parseFloat(a.getAttribute("data-price"));
+// 						const priceB = parseFloat(b.getAttribute("data-price"));
+// 						const nameA = a.getAttribute("data-name").toLowerCase();
+// 						const nameB = b.getAttribute("data-name").toLowerCase();
 	
-						if (sortValue === "price-asc") return priceA - priceB;
-						if (sortValue === "price-desc") return priceB - priceA;
-						if (sortValue === "name-asc") return nameA.localeCompare(nameB);
-						if (sortValue === "name-desc") return nameB.localeCompare(nameA);
-						return 0;
-					});
+// 						if (sortValue === "price-asc") return priceA - priceB;
+// 						if (sortValue === "price-desc") return priceB - priceA;
+// 						if (sortValue === "name-asc") return nameA.localeCompare(nameB);
+// 						if (sortValue === "name-desc") return nameB.localeCompare(nameA);
+// 						return 0;
+// 					});
 	
-					productContainer.innerHTML = "";
-					products.forEach(product => productContainer.appendChild(product));
-				}
+// 					productContainer.innerHTML = "";
+// 					products.forEach(product => productContainer.appendChild(product));
+// 				}
 	
-				searchInput.addEventListener("input", filterProducts);
-				categoryFilter.addEventListener("change", filterProducts);
-				sortFilter.addEventListener("change", sortProducts);
-			});
+// 				searchInput.addEventListener("input", filterProducts);
+// 				categoryFilter.addEventListener("change", filterProducts);
+// 				sortFilter.addEventListener("change", sortProducts);
+// 			});
 
-			document.addEventListener("DOMContentLoaded", function () {
-      const productCards = document.querySelectorAll(".product-card");
+// 			document.addEventListener("DOMContentLoaded", function () {
+//       const productCards = document.querySelectorAll(".product-card");
 
-      productCards.forEach((card) => {
-        card.addEventListener("click", () => {
-          // Toggle the active class
-          card.classList.toggle("active");
-        });
-      });
+//       productCards.forEach((card) => {
+//         card.addEventListener("click", () => {
+//           // Toggle the active class
+//           card.classList.toggle("active");
+//         });
+//       });
+//     });
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+        const searchInput = document.querySelector("#searchInput");
+        const products = document.querySelectorAll(".product-card");
+
+        function filterProducts() {
+            const searchText = searchInput.value.toLowerCase();
+
+            products.forEach(product => {
+                const productName = product.getAttribute("data-name").toLowerCase();
+                product.style.display = productName.includes(searchText) ? "block" : "none";
+            });
+        }
+
+        searchInput.addEventListener("input", filterProducts);
     });
 		</script>
 	</section>
