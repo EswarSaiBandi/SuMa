@@ -607,9 +607,8 @@
 //     });
 
 
-
 document.addEventListener("DOMContentLoaded", function () {
-        const searchInput = document.querySelector("#searchInput");
+	const searchInput = document.querySelector("#searchInput");
         const products = document.querySelectorAll(".product-card");
 
         function filterProducts() {
@@ -622,7 +621,21 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         searchInput.addEventListener("input", filterProducts);
+			});
+
+			document.addEventListener("DOMContentLoaded", function () {
+      const productCards = document.querySelectorAll(".product-card");
+
+      productCards.forEach((card) => {
+        card.addEventListener("click", () => {
+          // Toggle the active class
+          card.classList.toggle("active");
+        });
+      });
     });
+
+
+
 		</script>
 	</section>
 	
