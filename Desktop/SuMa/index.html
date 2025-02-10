@@ -339,6 +339,18 @@
             width: 100%;
             border-radius: 5px;
         }
+ 
+		.product-container {
+			display: flex;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			gap: 20px;
+			justify-content: center;
+			flex-wrap: wrap; /* Ensures responsiveness */
+		}
+		#searchInput {
+			margin-bottom: 20px; /* Adjust spacing as needed */
+		}
+
 
  
     </style>
@@ -385,7 +397,7 @@
 	
  
 
-        <div class="row" id="productContainer">
+        <div  class="product-container" id="productContainer" >
 			 
 				<div class="col-md-4 mb-4 product-card" data-category="vitamins" data-price="10" data-name="Paracetamol" data-description="Brief description of Product 1." data-image="images/medicine.png" data-packing="Blister Pack of 5 × 5 × 2 ml. 12 × 10 ml. Vial" data-usage="Antibacterial, effective against wide range of Gram +ve and Gram -ve bacteria">
 					 
@@ -412,7 +424,59 @@
 						<p>₹50</p>
 					</div>
 
-			</div>
+			    </div>
+				<div class="col-md-4 mb-4 product-card" data-category="vitamins" data-price="10" data-name="Paracetamol1" data-description="Brief description of Product 1." data-image="images/medicine.png" data-packing="Blister Pack of 5 × 5 × 2 ml. 12 × 10 ml. Vial" data-usage="Antibacterial, effective against wide range of Gram +ve and Gram -ve bacteria">
+					 
+					<div class="card" data-name="Paracetamol1" data-price="₹50" data-description="Effective for fever and mild pain relief." data-image="paracetamol.jpg">
+						 
+						<img src="images/medicine.png" class="card-img-top" alt="Amoxicillin" style="display: block; margin-left: auto; margin-right: auto;">
+						<h3>Paracetamol1</h3>
+						<h5 class="product-description" style="text-align: center; font-size: 1.1rem; color: #555; margin: 10px 0; font-weight: normal; line-height: 1.5; font-family: 'Georgia', serif;">
+							Brief description of Product 1.
+						  </h5>
+						<p>₹50</p>
+					</div>
+
+			    </div>
+				<div class="col-md-4 mb-4 product-card" data-category="vitamins" data-price="10" data-name="Paracetamol1" data-description="Brief description of Product 1." data-image="images/medicine.png" data-packing="Blister Pack of 5 × 5 × 2 ml. 12 × 10 ml. Vial" data-usage="Antibacterial, effective against wide range of Gram +ve and Gram -ve bacteria">
+					 
+					<div class="card" data-name="Paracetamol1" data-price="₹50" data-description="Effective for fever and mild pain relief." data-image="paracetamol.jpg">
+						 
+						<img src="images/medicine.png" class="card-img-top" alt="Amoxicillin" style="display: block; margin-left: auto; margin-right: auto;">
+						<h3>Paracetamol1</h3>
+						<h5 class="product-description" style="text-align: center; font-size: 1.1rem; color: #555; margin: 10px 0; font-weight: normal; line-height: 1.5; font-family: 'Georgia', serif;">
+							Brief description of Product 1.
+						  </h5>
+						<p>₹50</p>
+					</div>
+
+			    </div>
+				<div class="col-md-4 mb-4 product-card" data-category="vitamins" data-price="10" data-name="Paracetamol1" data-description="Brief description of Product 1." data-image="images/medicine.png" data-packing="Blister Pack of 5 × 5 × 2 ml. 12 × 10 ml. Vial" data-usage="Antibacterial, effective against wide range of Gram +ve and Gram -ve bacteria">
+					 
+					<div class="card" data-name="Paracetamol1" data-price="₹50" data-description="Effective for fever and mild pain relief." data-image="paracetamol.jpg">
+						 
+						<img src="images/medicine.png" class="card-img-top" alt="Amoxicillin" style="display: block; margin-left: auto; margin-right: auto;">
+						<h3>Paracetamol1</h3>
+						<h5 class="product-description" style="text-align: center; font-size: 1.1rem; color: #555; margin: 10px 0; font-weight: normal; line-height: 1.5; font-family: 'Georgia', serif;">
+							Brief description of Product 1.
+						  </h5>
+						<p>₹50</p>
+					</div>
+
+			    </div>
+				<div class="col-md-4 mb-4 product-card" data-category="vitamins" data-price="10" data-name="Paracetamol1" data-description="Brief description of Product 1." data-image="images/medicine.png" data-packing="Blister Pack of 5 × 5 × 2 ml. 12 × 10 ml. Vial" data-usage="Antibacterial, effective against wide range of Gram +ve and Gram -ve bacteria">
+					 
+					<div class="card" data-name="Paracetamol1" data-price="₹50" data-description="Effective for fever and mild pain relief." data-image="paracetamol.jpg">
+						 
+						<img src="images/medicine.png" class="card-img-top" alt="Amoxicillin" style="display: block; margin-left: auto; margin-right: auto;">
+						<h3>Paracetamol1</h3>
+						<h5 class="product-description" style="text-align: center; font-size: 1.1rem; color: #555; margin: 10px 0; font-weight: normal; line-height: 1.5; font-family: 'Georgia', serif;">
+							Brief description of Product 1.
+						  </h5>
+						<p>₹50</p>
+					</div>
+
+			    </div>
 				
 	 
                 <div class="modal" id="productModal">
@@ -537,64 +601,78 @@
 		//     });
 		
 		
-		document.addEventListener("DOMContentLoaded", function () {
-			    const searchInput = document.querySelector("#searchInput");
-				const products = document.querySelectorAll(".product-card");
+		// document.addEventListener("DOMContentLoaded", function () {
+		// 	    const searchInput = document.querySelector("#searchInput");
+		// 		const products = document.querySelectorAll(".product-card");
 		
-				function filterProducts() {
-					const searchText = searchInput.value.toLowerCase();
+		// 		function filterProducts() {
+		// 			const searchText = searchInput.value.toLowerCase();
 		
-					products.forEach(product => {
-						const productName = product.getAttribute("data-name").toLowerCase();
-						product.style.display = productName.includes(searchText) ? "block" : "none";
-					});
-				}
+		// 			products.forEach(product => {
+		// 				const productName = product.getAttribute("data-name").toLowerCase();
+		// 				product.style.display = productName.includes(searchText) ? "block" : "none";
+		// 			});
+		// 		}
 		
-				searchInput.addEventListener("input", filterProducts);
+		// 		searchInput.addEventListener("input", filterProducts);
 			    
-		 });
-		 
+		//  });
+
 		document.addEventListener("DOMContentLoaded", function () {
-			  const productCards = document.querySelectorAll(".product-card");
+					const searchInput = document.querySelector("#searchInput");
+					const products = document.querySelectorAll(".product-card");
+					const modal = document.getElementById("productModal");
+					const modalContent = document.querySelector(".modal-content");
+					const modalTitle = document.getElementById("modalTitle");
+					const modalImage = document.getElementById("modalImage");
+					const modalDescription = document.getElementById("modalDescription");
+					const modalPacking = document.getElementById("modalPacking");
+					const modalUsage = document.getElementById("modalUsage");
+					const modalPrice = document.getElementById("modalPrice");
+
+					function filterProducts() {
+						const searchText = searchInput.value.toLowerCase();
+						products.forEach(product => {
+							const productName = product.getAttribute("data-name").toLowerCase();
+							product.style.display = productName.includes(searchText) ? "block" : "none";
+						});
+					}
+
+					searchInput.addEventListener("input", filterProducts);
+
+					// Attach event listener to each product card
+					products.forEach(productCard => {
+						productCard.addEventListener("click", function () {
+							modalTitle.textContent = this.getAttribute("data-name");
+							modalImage.src = this.getAttribute("data-image");
+							modalDescription.textContent = this.getAttribute("data-description");
+							modalPacking.textContent = this.getAttribute("data-packing");
+							modalPrice.textContent = this.getAttribute("data-price");
+							modalUsage.textContent = this.getAttribute("data-usage"); // Ensure correct attribute name
+							modal.style.display = "flex";
+						});
+			});
+
+			// Function to close the modal
+			function closeModal() {	
+				modal.style.display = "none";
+			}
+
+			// Close modal when clicking the close button
+			document.querySelector(".close-btn").addEventListener("click", closeModal);
+
+			// Close modal when clicking outside of the modal content
+			modal.addEventListener("click", function (event) {
+				if (!modalContent.contains(event.target)) {
+					closeModal();
+				}
+			});
+});
+
+
+		
+		 
  
-			  productCards.forEach((card) => {
-				card.addEventListener("click", () => {
-				  // Toggle the active class
-				  card.classList.toggle("active");
-				}); 
-			  });
-
-
-
-			const productCard = document.querySelector(".product-card");
-            const modal = document.getElementById("productModal");
-            const modalTitle = document.getElementById("modalTitle");
-            const modalImage = document.getElementById("modalImage");
-            const modalDescription = document.getElementById("modalDescription");
-            const modalPacking = document.getElementById("modalPacking");
-            const modalUsage = document.getElementById("modalUsage");
-            const modalPrice = document.getElementById("modalPrice");
-
-            productCard.addEventListener("click", function() {
-                modalTitle.textContent = this.getAttribute("data-name");
-                modalImage.src = this.getAttribute("data-image");
-                modalDescription.textContent = this.getAttribute("data-description");
-                modalPacking.textContent = this.getAttribute("data-packing");
-                modalPrice.textContent = this.getAttribute("data-price");
-                modalUsage.textContent = this.getAttribute("data-Usage");
-                modal.style.display = "flex";
-				
-            });
-
-	 
-		});
-			 
-
-
-
-		function closeModal() {
-            document.getElementById("productModal").style.display = "none";
-        }
 		
 		
 	</script> 
