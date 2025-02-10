@@ -6,8 +6,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>SuMa Enterprises</title>
-		<meta name="description" content="Responsive HTML5 Template">
-		<meta name="author" content="webthemez">
+		<meta name="description" content="SuMa Enterprises">
+		<meta name="author" content="Eswar Sai Bandi">
 
 		<!-- Mobile Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,9 +20,15 @@
 		<link href="css/animations.css" rel="stylesheet"> 
 		<link href="css/style.css" rel="stylesheet"> 
 		<link href="css/custom.css" rel="stylesheet">
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet1">
+		
+	 
+
 	</head>
 
 	<body class="no-trans">
+		 
 		<!-- scrollToTop --> 
 		<div class="scrollToTop"><i class="icon-up-open-big"></i></div>
 
@@ -143,7 +149,6 @@
  
 </section>
  
-
 	 <!-- Products Section -->
 <section id="products-section" class="section clearfix no-view secPadding" data-animation-effect="fadeIn">
     <style>
@@ -181,264 +186,7 @@
         #products-section .btn-primary:hover {
             background-color: #0056b3;
         }
-
-
-		
-    </style>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h1 class="title" id="products">Products</h1>
-            </div>
-        </div>
-
-        <!-- Filters, Search, and Sorting -->
-        <div class="row mb-4">
-	 
-            <!-- <div class="col-md-4">  If you are uncommenting this..go to the script that is at almost botthm..dont select the first script ..go
-				to the second script and uncomment the commented one and comment the uncommented one
-                <select id="categoryFilter" class="form-select">
-                    <option value="all">All Categories</option>
-                    <option value="pain-relief">Pain Relief</option>
-                    <option value="vitamins">Vitamins</option>
-                    <option value="antibiotics">Antibiotics</option>
-                    <option value="allergy">Allergy Medications</option>
-					<option value="vitamins">Vitamins</option>
-                </select>
-            </div> -->
-            <div class="col-md-12">
-                <input type="text" id="searchInput" class="form-control" placeholder="Search products...">
-            </div>
-
-		 
-            <!-- <div class="col-md-4">
-                <select id="sortFilter" class="form-select">
-                    <option value="default">Sort By</option>
-                    <option value="price-asc">Price: Low to High</option>
-                    <option value="price-desc">Price: High to Low</option>
-                    <option value="name-asc">Name: A-Z</option>
-                    <option value="name-desc">Name: Z-A</option>
-                </select>
-            </div> -->
-        </div>
-
-
-	 
-		 
-		
- 
-
-
-
-
-        <!-- Products Grid -->
-        <div class="row" id="productContainer">
-			<div>
-            <div class="col-md-4 mb-4 product-card" data-category="vitamins" data-price="10" data-name="C Vitamin">
-                <div class="card">
-                    <!-- <img src="images/medicine.png" class="card-img-top" alt="Amoxicillin"> -->
-
-
-					<img src="images/medicine.png" class="card-img-top" alt="Amoxicillin" style="display: block; margin-left: auto; margin-right: auto;">
-					<div class="card-body text-center">
-						<h5 class="card-title">C Vitamin</h5>
-						<p class="card-text">Antibiotic for bacterial infections.</p>
-						<h5 class="product-description" style="text-align: center; font-size: 1.1rem; color: #555; margin: 10px 0; font-weight: normal; line-height: 1.5; font-family: 'Georgia', serif;">
-							Brief description of Product 1.
-						  </h5>
-						  <div class="product-details">
-                            <p><strong>PACKING:</strong> Blister Pack of 5 × 5 × 2 ml. 12 × 10 ml. Vial</p>
-                            <p><strong>USAGE:</strong> Antibacterial, effective against wide range of Gram +ve and Gram -ve bacteria</p>
-                            <p><strong>Each 2ml. contains:</strong></p>
-                            <p>Amikacin Sulphate U.S.P equivalent to Amikacin base 100/250/500mg.</p>
-                            <p class="card-text"><strong>Price: ₹10</strong></p>
-
-                        </div>
-					</div>
-				
-                </div>
-            </div>
-
-
-
-
-			<div class="col-md-4 mb-4 product-card" data-category="pain-relief" data-price="20" data-name="D Vitamin">
-                <div class="card">
-                    <!-- <img src="images/medicine.png" class="card-img-top" alt="Amoxicillin"> -->
-
-
-					<img src="images/medicine.png" class="card-img-top" alt="Amoxicillin" style="display: block; margin-left: auto; margin-right: auto;">
-					<div class="card-body text-center">
-						<h5 class="card-title">D Vitamin</h5>
-						<p class="card-text">Antibiotic for bacterial infections.</p>
-						<h5 class="product-description" style="text-align: center; font-size: 1.1rem; color: #555; margin: 10px 0; font-weight: normal; line-height: 1.5; font-family: 'Georgia', serif;">
-							Brief description of Product 1.
-						  </h5>
-						  <div class="product-details">
-                            <p><strong>PACKING:</strong> Blister Pack of 5 × 5 × 2 ml. 12 × 10 ml. Vial</p>
-                            <p><strong>USAGE:</strong> Antibacterial, effective against wide range of Gram +ve and Gram -ve bacteria</p>
-                            <p><strong>Each 2ml. contains:</strong></p>
-                            <p>Amikacin Sulphate U.S.P equivalent to Amikacin base 100/250/500mg.</p>
-                            <p class="card-text"><strong>Price: ₹20</strong></p>
-
-                        </div>
-					</div>
-				
-                </div>
-            </div>
-
-
-
-			<div class="col-md-4 mb-4 product-card" data-category="antibiotic" data-price="30" data-name="E Vitamin">
-                <div class="card">
-                    <!-- <img src="images/medicine.png" class="card-img-top" alt="Amoxicillin"> -->
-
-
-					<img src="images/medicine.png" class="card-img-top" alt="Amoxicillin" style="display: block; margin-left: auto; margin-right: auto;">
-					<div class="card-body text-center">
-						<h5 class="card-title">E Vitamin</h5>
-						<p class="card-text">Antibiotic for bacterial infections.</p>
-						<h5 class="product-description" style="text-align: center; font-size: 1.1rem; color: #555; margin: 10px 0; font-weight: normal; line-height: 1.5; font-family: 'Georgia', serif;">
-							Brief description of Product 1.
-						  </h5>
-						  <div class="product-details">
-                            <p><strong>PACKING:</strong> Blister Pack of 5 × 5 × 2 ml. 12 × 10 ml. Vial</p>
-                            <p><strong>USAGE:</strong> Antibacterial, effective against wide range of Gram +ve and Gram -ve bacteria</p>
-                            <p><strong>Each 2ml. contains:</strong></p>
-                            <p>Amikacin Sulphate U.S.P equivalent to Amikacin base 100/250/500mg.</p>
-							<p class="card-text"><strong>Price: ₹30</strong></p>
-
-
-                        </div>
-					</div>
-				
-                </div>
-            </div>
-			
-
-			</div>
-			<div>
-				<div class="col-md-4 mb-4 product-card" data-category="vitamins" data-price="40" data-name="K Vitamin">
-					<div class="card">
-						<!-- <img src="images/medicine.png" class="card-img-top" alt="Amoxicillin"> -->
-	
-	
-						<img src="images/medicine.png" class="card-img-top" alt="Amoxicillin" style="display: block; margin-left: auto; margin-right: auto;">
-						<div class="card-body text-center">
-							<h5 class="card-title">K Vitamin</h5>
-							<p class="card-text">Antibiotic for bacterial infections.</p>
-							<h5 class="product-description" style="text-align: center; font-size: 1.1rem; color: #555; margin: 10px 0; font-weight: normal; line-height: 1.5; font-family: 'Georgia', serif;">
-								Brief description of Product 1.
-							  </h5>
-							  <div class="product-details">
-								<p><strong>PACKING:</strong> Blister Pack of 5 × 5 × 2 ml. 12 × 10 ml. Vial</p>
-								<p><strong>USAGE:</strong> Antibacterial, effective against wide range of Gram +ve and Gram -ve bacteria</p>
-								<p><strong>Each 2ml. contains:</strong></p>
-								<p>Amikacin Sulphate U.S.P equivalent to Amikacin base 100/250/500mg.</p>
-								<p class="card-text"><strong>Price: ₹40</strong></p>
-								
-	
-							</div>
-						</div>
-					
-					</div>
-				</div>
-	
-	
-				<div class="col-md-4 mb-4 product-card" data-category="vitamins" data-price="50" data-name="Y Vitamin">
-					<div class="card">
-						<!-- <img src="images/medicine.png" class="card-img-top" alt="Amoxicillin"> -->
-	
-	
-						<img src="images/medicine.png" class="card-img-top" alt="Amoxicillin" style="display: block; margin-left: auto; margin-right: auto;">
-						<div class="card-body text-center">
-							<h5 class="card-title">Y Vitamin</h5>
-							<p class="card-text">Antibiotic for bacterial infections.</p>
-							<h5 class="product-description" style="text-align: center; font-size: 1.1rem; color: #555; margin: 10px 0; font-weight: normal; line-height: 1.5; font-family: 'Georgia', serif;">
-								Brief description of Product 1.
-							  </h5>
-							  <div class="product-details">
-								<p><strong>PACKING:</strong> Blister Pack of 5 × 5 × 2 ml. 12 × 10 ml. Vial</p>
-								<p><strong>USAGE:</strong> Antibacterial, effective against wide range of Gram +ve and Gram -ve bacteria</p>
-								<p><strong>Each 2ml. contains:</strong></p>
-								<p>Amikacin Sulphate U.S.P equivalent to Amikacin base 100/250/500mg.</p>
-								<p class="card-text"><strong>Price: ₹50</strong></p>
-	
-							</div>
-						</div>
-					
-					</div>
-				</div>
-				
-			</div>
-
-		
-
-
- 
-        </div>
-    </div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const searchInput = document.querySelector("#products-section #searchInput");
-            const categoryFilter = document.querySelector("#products-section #categoryFilter"); 
-            const sortFilter = document.querySelector("#products-section #sortFilter");
-            const productContainer = document.querySelector("#products-section #productContainer");
-
-            function filterProducts() {
-                const searchText = searchInput.value.toLowerCase();
-                const selectedCategory = categoryFilter.value;
-                const products = document.querySelectorAll("#products-section .product-card");
-
-                products.forEach(product => {
-                    const productName = product.getAttribute("data-name").toLowerCase();
-                    const productCategory = product.getAttribute("data-category");
-
-                    const matchesSearch = productName.includes(searchText);
-                    const matchesCategory = selectedCategory === "all" || productCategory === selectedCategory;
-
-                    product.style.display = matchesSearch && matchesCategory ? "block" : "none";
-                });
-            }
-
-            function sortProducts() {
-                const sortValue = sortFilter.value;
-                const products = Array.from(document.querySelectorAll("#products-section .product-card"));
-
-                products.sort((a, b) => {
-                    const priceA = parseFloat(a.getAttribute("data-price"));
-                    const priceB = parseFloat(b.getAttribute("data-price"));
-                    const nameA = a.getAttribute("data-name").toLowerCase();
-                    const nameB = b.getAttribute("data-name").toLowerCase();
-
-                    if (sortValue === "price-asc") return priceA - priceB;
-                    if (sortValue === "price-desc") return priceB - priceA;
-                    if (sortValue === "name-asc") return nameA.localeCompare(nameB);
-                    if (sortValue === "name-desc") return nameB.localeCompare(nameA);
-                    return 0;
-                });
-
-                productContainer.innerHTML = "";
-                products.forEach(product => productContainer.appendChild(product));
-            }
-
-            searchInput.addEventListener("input", filterProducts);
-            categoryFilter.addEventListener("change", filterProducts);
-            sortFilter.addEventListener("change", sortProducts);
-        });
-    </script>
-</section>
-
-
-
-
-	 <!-- Products Section Styling and JavaScript is here -->
-	 <section id="products-section" class="section clearfix no-view secPadding" data-animation-effect="fadeIn">
-		<style>
-			/* General Styles */
-			body {
+		body {
 			  font-family: Arial, sans-serif;
 			  margin: 0;
 			  padding: 0;
@@ -540,108 +288,319 @@
 			}
 			#products-section {
             padding: 50px 0;
+            }
+
+			.product-card {
+            width: 250px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 300px;
+        }
+        .modal img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .close-btn {
+            background: red;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 5px;
         }
 
-		  </style>
+ 
+    </style>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="title" id="products">Products</h1>
+            </div>
+        </div>
+
+        <!-- Filters, Search, and Sorting -->
+        <div class="row mb-4">
+	 
+            <!-- <div class="col-md-4">  If you are uncommenting this..go to the script that is at almost botthm..dont select the first script ..go
+				to the second script and uncomment the commented one and comment the uncommented one
+                <select id="categoryFilter" class="form-select">
+                    <option value="all">All Categories</option>
+                    <option value="pain-relief">Pain Relief</option>
+                    <option value="vitamins">Vitamins</option>
+                    <option value="antibiotics">Antibiotics</option>
+                    <option value="allergy">Allergy Medications</option>
+					<option value="vitamins">Vitamins</option>
+                </select>
+            </div> -->
+            <div class="col-md-12">
+                <input type="text" id="searchInput" class="form-control" placeholder="Search products...">
+            </div>
+
+		 
+            <!-- <div class="col-md-4">
+                <select id="sortFilter" class="form-select">
+                    <option value="default">Sort By</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="name-asc">Name: A-Z</option>
+                    <option value="name-desc">Name: Z-A</option>
+                </select>
+            </div> -->
+        </div>
+
+
+ 
 	
  
-		<script>
 
-// document.addEventListener("DOMContentLoaded", function () {
-// 				const searchInput = document.querySelector("#products-section #searchInput");
-// 				const categoryFilter = document.querySelector("#products-section #categoryFilter");
-// 				const sortFilter = document.querySelector("#products-section #sortFilter");
-// 				const productContainer = document.querySelector("#products-section #productContainer");
-	
-// 				function filterProducts() {
-// 					const searchText = searchInput.value.toLowerCase();
-// 					const selectedCategory = categoryFilter.value;
-// 					const products = document.querySelectorAll("#products-section .product-card");
-	
-// 					products.forEach(product => {
-// 						const productName = product.getAttribute("data-name").toLowerCase();
-// 						const productCategory = product.getAttribute("data-category");
-	
-// 						const matchesSearch = productName.includes(searchText);
-// 						const matchesCategory = selectedCategory === "all" || productCategory === selectedCategory;
-	
-// 						product.style.display = matchesSearch && matchesCategory ? "block" : "none";
-// 					});
-// 				}
-	
-// 				function sortProducts() {
-// 					const sortValue = sortFilter.value;
-// 					const products = Array.from(document.querySelectorAll("#products-section .product-card"));
-	
-// 					products.sort((a, b) => {
-// 						const priceA = parseFloat(a.getAttribute("data-price"));
-// 						const priceB = parseFloat(b.getAttribute("data-price"));
-// 						const nameA = a.getAttribute("data-name").toLowerCase();
-// 						const nameB = b.getAttribute("data-name").toLowerCase();
-	
-// 						if (sortValue === "price-asc") return priceA - priceB;
-// 						if (sortValue === "price-desc") return priceB - priceA;
-// 						if (sortValue === "name-asc") return nameA.localeCompare(nameB);
-// 						if (sortValue === "name-desc") return nameB.localeCompare(nameA);
-// 						return 0;
-// 					});
-	
-// 					productContainer.innerHTML = "";
-// 					products.forEach(product => productContainer.appendChild(product));
-// 				}
-	
-// 				searchInput.addEventListener("input", filterProducts);
-// 				categoryFilter.addEventListener("change", filterProducts);
-// 				sortFilter.addEventListener("change", sortProducts);
-// 			});
+        <div class="row" id="productContainer">
+			 
+				<div class="col-md-4 mb-4 product-card" data-category="vitamins" data-price="10" data-name="Paracetamol" data-description="Brief description of Product 1." data-image="images/medicine.png" data-packing="Blister Pack of 5 × 5 × 2 ml. 12 × 10 ml. Vial" data-usage="Antibacterial, effective against wide range of Gram +ve and Gram -ve bacteria">
+					 
+						<div class="card" data-name="Paracetamol" data-price="₹50" data-description="Effective for fever and mild pain relief." data-image="paracetamol.jpg">
+							 
+					        <img src="images/medicine.png" class="card-img-top" alt="Amoxicillin" style="display: block; margin-left: auto; margin-right: auto;">
+							<h3>Paracetamol</h3>
+							<h5 class="product-description" style="text-align: center; font-size: 1.1rem; color: #555; margin: 10px 0; font-weight: normal; line-height: 1.5; font-family: 'Georgia', serif;">
+								Brief description of Product 1.
+							  </h5>
+							<p>₹50</p>
+						</div>
+ 
+		        </div>
+				<div class="col-md-4 mb-4 product-card" data-category="vitamins" data-price="10" data-name="Paracetamol1" data-description="Brief description of Product 1." data-image="images/medicine.png" data-packing="Blister Pack of 5 × 5 × 2 ml. 12 × 10 ml. Vial" data-usage="Antibacterial, effective against wide range of Gram +ve and Gram -ve bacteria">
+					 
+					<div class="card" data-name="Paracetamol1" data-price="₹50" data-description="Effective for fever and mild pain relief." data-image="paracetamol.jpg">
+						 
+						<img src="images/medicine.png" class="card-img-top" alt="Amoxicillin" style="display: block; margin-left: auto; margin-right: auto;">
+						<h3>Paracetamol1</h3>
+						<h5 class="product-description" style="text-align: center; font-size: 1.1rem; color: #555; margin: 10px 0; font-weight: normal; line-height: 1.5; font-family: 'Georgia', serif;">
+							Brief description of Product 1.
+						  </h5>
+						<p>₹50</p>
+					</div>
 
-// 			document.addEventListener("DOMContentLoaded", function () {
-//       const productCards = document.querySelectorAll(".product-card");
-
-//       productCards.forEach((card) => {
-//         card.addEventListener("click", () => {
-//           // Toggle the active class
-//           card.classList.toggle("active");
-//         });
-//       });
-//     });
+			</div>
+				
+	 
+                <div class="modal" id="productModal">
+					<div class="modal-content">
+						<h3 id="modalTitle"></h3>
+						<img id="modalImage" src="" alt="">
+						<p id="modalDescription"></p>
+						<p id="modalPacking"></p>
+						<p id="modalUsage"></p>
 
 
-document.addEventListener("DOMContentLoaded", function () {
-	const searchInput = document.querySelector("#searchInput");
-        const products = document.querySelectorAll(".product-card");
+						<p><strong>Price:</strong> <span id="modalPrice"></span></p>
+						<button class="close-btn" onclick="closeModal()">Close</button>
+					</div>
+				</div>
 
-        function filterProducts() {
-            const searchText = searchInput.value.toLowerCase();
 
-            products.forEach(product => {
-                const productName = product.getAttribute("data-name").toLowerCase();
-                product.style.display = productName.includes(searchText) ? "block" : "none";
+	 
+			
+ 
+	 
+		</div>
+ 
+
+		
+	 
+
+		<!-- <div class="row" id="productContainer">
+	 
+            <div class="col-md-4 mb-4 product-card" data-category="vitamins" data-price="10" data-name="C Vitamin">
+                <div class="card">
+                     
+					<img src="images/medicine.png" class="card-img-top" alt="Amoxicillin" style="display: block; margin-left: auto; margin-right: auto;">
+					<div class="card-body text-center">
+						<h5 class="card-title">C Vitamin</h5>
+						<p class="card-text">Antibiotic for bacterial infections.</p>
+						<h5 class="product-description" style="text-align: center; font-size: 1.1rem; color: #555; margin: 10px 0; font-weight: normal; line-height: 1.5; font-family: 'Georgia', serif;">
+							Brief description of Product 1.
+						  </h5>
+						  <div class="product-details">
+                            <p><strong>PACKING:</strong> Blister Pack of 5 × 5 × 2 ml. 12 × 10 ml. Vial</p>
+                            <p><strong>USAGE:</strong> Antibacterial, effective against wide range of Gram +ve and Gram -ve bacteria</p>
+                            <p><strong>Each 2ml. contains:</strong></p>
+                            <p>Amikacin Sulphate U.S.P equivalent to Amikacin base 100/250/500mg.</p>
+                            <p class="card-text"><strong>Price: ₹10</strong></p>
+
+                        </div>
+					</div>
+				
+                </div>
+            </div>
+        </div> -->
+
+
+		
+ 
+
+    </div>
+
+
+ 
+
+	<script>
+
+		// document.addEventListener("DOMContentLoaded", function () {
+		// 				const searchInput = document.querySelector("#products-section #searchInput");
+		// 				const categoryFilter = document.querySelector("#products-section #categoryFilter");
+		// 				const sortFilter = document.querySelector("#products-section #sortFilter");
+		// 				const productContainer = document.querySelector("#products-section #productContainer");
+			
+		// 				function filterProducts() {
+		// 					const searchText = searchInput.value.toLowerCase();
+		// 					const selectedCategory = categoryFilter.value;
+		// 					const products = document.querySelectorAll("#products-section .product-card");
+			
+		// 					products.forEach(product => {
+		// 						const productName = product.getAttribute("data-name").toLowerCase();
+		// 						const productCategory = product.getAttribute("data-category");
+			
+		// 						const matchesSearch = productName.includes(searchText);
+		// 						const matchesCategory = selectedCategory === "all" || productCategory === selectedCategory;
+			
+		// 						product.style.display = matchesSearch && matchesCategory ? "block" : "none";
+		// 					});
+		// 				}
+			
+		// 				function sortProducts() {
+		// 					const sortValue = sortFilter.value;
+		// 					const products = Array.from(document.querySelectorAll("#products-section .product-card"));
+			
+		// 					products.sort((a, b) => {
+		// 						const priceA = parseFloat(a.getAttribute("data-price"));
+		// 						const priceB = parseFloat(b.getAttribute("data-price"));
+		// 						const nameA = a.getAttribute("data-name").toLowerCase();
+		// 						const nameB = b.getAttribute("data-name").toLowerCase();
+			
+		// 						if (sortValue === "price-asc") return priceA - priceB;
+		// 						if (sortValue === "price-desc") return priceB - priceA;
+		// 						if (sortValue === "name-asc") return nameA.localeCompare(nameB);
+		// 						if (sortValue === "name-desc") return nameB.localeCompare(nameA);
+		// 						return 0;
+		// 					});
+			
+		// 					productContainer.innerHTML = "";
+		// 					products.forEach(product => productContainer.appendChild(product));
+		// 				}
+			
+		// 				searchInput.addEventListener("input", filterProducts);
+		// 				categoryFilter.addEventListener("change", filterProducts);
+		// 				sortFilter.addEventListener("change", sortProducts);
+		// 			});
+		
+		// 			document.addEventListener("DOMContentLoaded", function () {
+		//       const productCards = document.querySelectorAll(".product-card");
+		
+		//       productCards.forEach((card) => {
+		//         card.addEventListener("click", () => {
+		//           // Toggle the active class
+		//           card.classList.toggle("active");
+		//         });
+		//       });
+		//     });
+		
+		
+		document.addEventListener("DOMContentLoaded", function () {
+			    const searchInput = document.querySelector("#searchInput");
+				const products = document.querySelectorAll(".product-card");
+		
+				function filterProducts() {
+					const searchText = searchInput.value.toLowerCase();
+		
+					products.forEach(product => {
+						const productName = product.getAttribute("data-name").toLowerCase();
+						product.style.display = productName.includes(searchText) ? "block" : "none";
+					});
+				}
+		
+				searchInput.addEventListener("input", filterProducts);
+			    
+		 });
+		 
+		document.addEventListener("DOMContentLoaded", function () {
+			  const productCards = document.querySelectorAll(".product-card");
+ 
+			  productCards.forEach((card) => {
+				card.addEventListener("click", () => {
+				  // Toggle the active class
+				  card.classList.toggle("active");
+				}); 
+			  });
+
+
+
+			const productCard = document.querySelector(".product-card");
+            const modal = document.getElementById("productModal");
+            const modalTitle = document.getElementById("modalTitle");
+            const modalImage = document.getElementById("modalImage");
+            const modalDescription = document.getElementById("modalDescription");
+            const modalPacking = document.getElementById("modalPacking");
+            const modalUsage = document.getElementById("modalUsage");
+            const modalPrice = document.getElementById("modalPrice");
+
+            productCard.addEventListener("click", function() {
+                modalTitle.textContent = this.getAttribute("data-name");
+                modalImage.src = this.getAttribute("data-image");
+                modalDescription.textContent = this.getAttribute("data-description");
+                modalPacking.textContent = this.getAttribute("data-packing");
+                modalPrice.textContent = this.getAttribute("data-price");
+                modalUsage.textContent = this.getAttribute("data-Usage");
+                modal.style.display = "flex";
+				
             });
+
+	 
+		});
+			 
+
+
+
+		function closeModal() {
+            document.getElementById("productModal").style.display = "none";
         }
-
-        searchInput.addEventListener("input", filterProducts);
-			});
-
-			document.addEventListener("DOMContentLoaded", function () {
-      const productCards = document.querySelectorAll(".product-card");
-
-      productCards.forEach((card) => {
-        card.addEventListener("click", () => {
-          // Toggle the active class
-          card.classList.toggle("active");
-        });
-      });
-    });
-
-
-
-		</script>
-	</section>
-	
-
-
-
+		
+		
+	</script> 
+ 
+</section>
+   
 
 
 
