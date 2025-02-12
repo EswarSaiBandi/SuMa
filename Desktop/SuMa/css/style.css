@@ -325,6 +325,10 @@ color:#fff;
 background: #020202;
 color: #949494;
 }
+.sendbuttoncontainer {
+    display: flex;
+    justify-content: center;
+}
 .subfooter p {
 	margin-bottom: 0;
 	color: #fff;
@@ -765,7 +769,7 @@ border-radius: 50%;
 	height: 52px;
 	display: inline-block;
 	border-radius: 	0%;
-	font-size: 26px;
+	font-size: 16px;
 	text-align: center;
 	padding: 4px;
 }
